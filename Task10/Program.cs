@@ -9,6 +9,12 @@
 int x;
 Console.WriteLine("Введите  трехзначное число: ");
 x = Convert.ToInt32(Console.ReadLine());
-int a1 = x / 10;
-int a2 = a1 % 10;
-Console.Write(a2);
+if(x > 99 && x < 1000)
+{
+    int a1 = x / 10;
+    int a2 = a1 % 10;
+    Console.Write("Второй цифрой числа "+ x + " является: " + a2);
+}
+else{
+    Console.WriteLine("Число не трехзначное! Повторите");
+}
